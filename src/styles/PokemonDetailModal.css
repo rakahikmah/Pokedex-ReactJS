@@ -1,0 +1,43 @@
+/* src/components/PokemonDetailModal.css */
+.pokemon-modal .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+.pokemon-modal .modal-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+    padding: 2rem;
+}
+.pokemon-modal .modal-header .btn-close {
+    filter: brightness(0) invert(1); /* Membuat tombol close menjadi putih */
+}
+.pokemon-modal .modal-body {
+    padding: 1.5rem;
+    padding-top: 60px; /* Beri ruang untuk gambar */
+    position: relative;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.pokemon-detail-image {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -110px; /* Tarik gambar ke atas */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1056; /* Pastikan di atas semua elemen lain */
+}
+.pokemon-modal .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.pokemon-modal .nav-tabs .nav-link {
+    color: #6c757d;
+    font-weight: bold;
+    border: none;
+}
+.pokemon-modal .nav-tabs .nav-link.active {
+    color: #212529;
+    border-bottom: 2px solid #212529;
+}

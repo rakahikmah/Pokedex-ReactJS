@@ -1,0 +1,102 @@
+/* src/components/PokemonCard.css */
+
+/* -- Kontainer Utama Kartu -- */
+.pokemon-card-new {
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+  /* Layout utama untuk layar besar (desktop) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 130px; 
+  
+}
+
+/* -- Efek Hover -- */
+.pokemon-card-new:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.pokemon-card-new .card-title {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.pokemon-card-new .type-badge {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 4px 14px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* -- Sisi Kanan: ID dan Gambar -- */
+.pokemon-id-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.pokemon-card-new .card-id {
+  font-weight: bold;
+  color: rgba(23, 23, 27, 0.6);
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 1;
+}
+
+.pokemon-card-new .pokemon-image {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+}
+
+
+/* Kode ini hanya akan aktif jika lebar layar 576px ke bawah */
+@media (max-width: 576px) {
+  .pokemon-card-new {
+    /* Ubah layout menjadi vertikal */
+    flex-direction: column;
+    align-items: center; /* Posisikan semua item ke tengah */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .pokemon-id-image {
+    /* Balik urutan agar gambar di atas ID */
+    flex-direction: column-reverse; 
+    align-items: center; /* Posisikan ke tengah */
+    margin-top: 10px; /* Beri jarak dari info tipe */
+  }
+  
+  .pokemon-info {
+    /* Pastikan urutan nama dan tipe benar */
+    order: 2;
+  }
+
+  .pokemon-card-new .card-id {
+    margin-bottom: 0;
+    margin-top: 5px; /* Beri jarak dari gambar */
+  }
+
+  .pokemon-card-new .pokemon-image {
+    width: 80px; /* Sedikit perkecil gambar agar pas */
+    height: 80px;
+  }
+  
+  .pokemon-card-new .type-badge {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+}
