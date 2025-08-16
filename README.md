@@ -47,7 +47,7 @@ Untuk menjalankan project ini secara lokal, ikuti langkah-langkah berikut:
 ```bash
 git clone https://github.com/rakahikmah/Pokedex-ReactJS.git
 ```
-*(Ganti dengan URL repository GitHub Anda)*
+
 
 **2. Masuk ke Direktori Project**
 ```bash
