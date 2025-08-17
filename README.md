@@ -1,6 +1,6 @@
 # Pokedex App - Technical Test for Sprout Digital Labs
 
-Aplikasi web Pokedex yang dibangun menggunakan React dan Vite sebagai bagian dari proses _technical test_ untuk **Sprout Digital Labs**. Aplikasi ini menampilkan daftar Pokemon dari PokéAPI dengan fitur paginasi, dan memungkinkan pengguna untuk melihat detail lengkap dari setiap Pokemon melalui jendela modal interaktif.
+Aplikasi web Pokedex yang dibangun menggunakan React dan Vite Aplikasi ini menampilkan daftar Pokemon dari PokéAPI dengan fitur paginasi, dan memungkinkan pengguna untuk melihat detail lengkap dari setiap Pokemon melalui jendela modal interaktif.
 
 ## Tampilan Aplikasi
 
